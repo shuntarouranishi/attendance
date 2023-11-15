@@ -13,7 +13,7 @@ def is_holiday_or_weekend(date):
     return date.weekday() in [5, 6] or date in jp_holidays
 
 # Streamlit app title and file uploader
-st.title('Attendance Chart Application')
+st.title('シフト作成アプリ')
 uploaded_file = st.file_uploader("Choose an Excel file", type=["xlsx"])
 
 if uploaded_file is not None:
